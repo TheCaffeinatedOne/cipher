@@ -92,7 +92,7 @@ function vig(msgunprocessed, keyraw) {
   var msgunprocessed2 = msgunprocessed1.split("")
   var msgprocessed = [];
   var passes1 = 0
-  var msglen = msgunprocessed2.length - 1
+  var msglen = msgunprocessed2.length
   while (passes1 <= msglen ) {
     switch (msgunprocessed2[passes1]) {
       case 'a':
@@ -183,7 +183,7 @@ function vig(msgunprocessed, keyraw) {
   var final = [ ];
   var keypos = 0;
   var charpos = 0;
-  var end = msgprocessed.length -1
+  var end = msgprocessed.length
  while (charpos <= end) {
    //1
    var charnum = msgprocessed[charpos] + keyprocessed[keypos];
@@ -330,7 +330,7 @@ function unvig(msgunprocessed, keyraw) {
   var msgunprocessed2 = msgunprocessed1.split("")
   var msgprocessed = [];
   var passes1 = 0
-  var msglen = msgunprocessed2.length - 1
+  var msglen = msgunprocessed2.length
   while (passes1 <= msglen ) {
     switch (msgunprocessed2[passes1]) {
       case 'a':
@@ -421,7 +421,7 @@ function unvig(msgunprocessed, keyraw) {
   var final = [ ];
   var keypos = 0;
   var charpos = 0;
-  var end = msgprocessed.length -1
+  var end = msgprocessed.length
  while (charpos <= end) {
 
    //1
